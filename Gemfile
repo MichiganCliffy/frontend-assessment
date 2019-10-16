@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.5.5'
+
 gem 'sass'
 gem 'sass-css-importer'
 gem 'compass'
