@@ -1,0 +1,23 @@
+{
+  "name": "front-end-test",
+  "version": "1.0.0",
+  "homepage": "https://github.com/michigancliffy/front-end-test",
+  "authors": [
+    "William Clifford <wclifford@yahoo.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "bootstrap-sass": "*"
+  },
+  "devDependencies": {
+    "jquery": "*",
+    "bootstrap-sass": "*"
+  }
+}

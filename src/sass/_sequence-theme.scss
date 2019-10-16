@@ -1,0 +1,75 @@
+
+.sequence-theme {
+  background-color: #0d0d0d;
+  color: #a7a9ac;
+  font-family: TradeGothic;
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 60px;
+
+  h1, h2, h3 {
+    font-weight: 300;
+  }
+
+  a {
+    color: #a7a9ac;
+    text-decoration: underline;
+  }
+
+  a:active, a:hover {
+    color: #63afc5;
+    text-decoration: none;
+  }
+
+  .header {
+    h1 {
+      line-height: 60px;
+      font-size: 56px;
+      color: #fff;
+    }
+
+    p {
+      color: #fff;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .logo {
+      margin-top: 14px;
+      text-align: right;
+    }
+  }
+
+  .section {
+    margin: 22px 0 0 0;
+
+    h1 {
+      font-size: 24px;
+      line-height: 28px;
+      padding-bottom: 15px;
+      background: url(../images/label-dots.svg) repeat-x 0 bottom;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      line-height: 26px;
+    }
+  }
+
+  .assets {
+    ul {
+      padding: 0;
+    }
+
+    li {
+      list-style-type: none;
+    }
+  }
+}
