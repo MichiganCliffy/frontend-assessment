@@ -13,7 +13,7 @@ var fs = require('file-system');
  */
 
 gulp.task('compass', function() {
-  gulp.src('src/sass/application.scss')
+  return gulp.src('src/sass/application.scss')
   .pipe(compass({
     css: 'html',
     sass: 'src/sass/',
@@ -29,7 +29,7 @@ gulp.task('compass', function() {
  */
 
 gulp.task('scripts', function() {
-  gulp.src([
+  return gulp.src([
     'bower_components/jquery/dist/jquery.min.js',
     'src/js/application.js'
   ])
@@ -73,16 +73,16 @@ gulp.task('watch', function() {
  * Default task
  */
 
-gulp.task('default', ['watch', 'webserver']);
+gulp.task('default', gulp.parallel('watch', 'webserver'));
 
 /**
  * Build task
  */
 
-gulp.task('build', ['compass', 'scripts']);
+gulp.task('build', gulp.parallel('compass', 'scripts'));
 
 /**
  * Deploy task
  */
 
-gulp.task('deploy', ['build', 's3']);
+gulp.task('deploy', gulp.parallel('build', 's3'));
